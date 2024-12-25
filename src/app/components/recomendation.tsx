@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { FaGasPump } from "react-icons/fa"
 import { HiOutlineSupport } from "react-icons/hi"
 
@@ -9,11 +10,11 @@ export default function RecomendationCar(){
     return( 
         
             <div>
-            <div className="flex justify-between mx-20 py-12">
+            <div className="flex justify-between mx-3 md:mx-20 py-12">
                 <h4 className="font-semibold text-[#90A3BF]">Recomendation Car</h4>
                 <button className="text-[#3563E9] font-semibold">View All</button>
             </div>
-        <div className="grid grid-cols-4 gap-4 mx-14">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mx-3 md:mx-14">
             {/* 1 */}
             <div className="bg-white pt-6 px-4"> 
                 <h2 className="font-bold">All New Rush</h2>
@@ -267,7 +268,10 @@ export default function RecomendationCar(){
             </div>
       
         </div>
-          
+        <div className="mt-12 pb-10 text-center">
+             <button className="text-white bg-[#3563E9] py-2 px-6 rounded-md">
+                <Link href="/category">Show more car</Link></button>
+             </div>
         </div>
              
    

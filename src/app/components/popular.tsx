@@ -10,18 +10,18 @@ import { IoHeart, IoHeartOutline } from "react-icons/io5"
 export default function PopularCar(){
     return( 
         <div className="mt-7">
-            <div className="flex justify-between mx-20 py-6">
+            <div className="flex justify-between mx-3 md:mx-20 py-6">
                 <h4 className="font-semibold text-[#90A3BF]">Popular Car</h4>
                 <button className="text-[#3563E9] font-semibold">View All</button>
             </div>
-        <div className="grid grid-cols-4 gap-4 mx-14 mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mx-3 md:mx-14 mt-5">
             {/* 1 */}
             <div className=" bg-white pt-6 px-4"> 
                
                 <h2 className="font-bold">Koenigsegg</h2>
                 <div className="flex justify-between">
                 <h3 className="font-semibold font-mono text-[#90A3BF]">Sport</h3>
-                <IoHeart className="text-red-600 -mt-5"/>
+                <IoHeart className=" text-red-600 -mt-5"/>
                 </div>
                 <div className="pt-12 pb-12">
                 <Image src="/image7.png"alt=""width={1000}height={1000}/>
