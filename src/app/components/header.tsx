@@ -5,14 +5,14 @@ import Link from "next/link";
 import { FaBell } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import { IoMdSettings } from "react-icons/io";
-import { IoHeart } from "react-icons/io5";
+import { IoHeart} from "react-icons/io5";
 import { RxMixerHorizontal } from "react-icons/rx";
 export default function Header(){
     return(
         <header>
         <div className=" md:flex justify-between mx-3 md:mx-20  py-4">
             <div className="flex justify-between">
-            <h1 className=" text-[#3563E9] font-semibold text-2xl md:text-4xl"> <Link href="/">MORENT</Link></h1>
+            <h1 className="font-semibold text-[#3563E9]  text-2xl md:text-4xl"> <Link href="/">MORENT</Link></h1>
             <Image src="/image.jpg" alt="" width={100} height={100} className="h-8 w-8 md:-mt-2 sm:block md:hidden"/>
             </div>
             <div className="flex border-2 rounded-md md:rounded-full mt-5 md:mt-0 py-1 md:py-0 px-1 md:px-16">
